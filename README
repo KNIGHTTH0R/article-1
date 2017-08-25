@@ -16,4 +16,4 @@ article- -  - - -  - - - -- -  - - -  - - - - 文章发布系统根目录
         blogstyle-----------------------------自定义样式文件
     js----------------------------------------方法行为目录(目前引用的为第三方库里面的文件)
     README------------------------------------目录说明
-    this operate is for version backup!
+    this operate is for version backup
