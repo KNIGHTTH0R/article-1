@@ -1,5 +1,5 @@
 ﻿<?php  
-    require_once('../connect.php');  
+    require_once('../front/connect.php');  
     //把传递过来的信息入库，在入库之前对所有的信息进行校验。  
     //print_r($_POST);  
   
@@ -13,8 +13,8 @@
     $content = $_POST['content'];  
     $dateline = time();  
   
-    $insertsql = "insert into article(title,author,description,content,dateline) values('$title','$author','$description','$content',$dateline)";  
-    //echo $insertsql;  
+    $insertsql = "insert into blog(title,author,description,content,dateline) values('$title','$author','$description','$content',$dateline)";  
+    echo $insertsql;  
     if(mysql_query($insertsql)) {  
         echo "<script>alert('发布文章成功'); window.location.href='article.manage.php'</script>";   
     } else {  

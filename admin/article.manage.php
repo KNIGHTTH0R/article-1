@@ -1,6 +1,6 @@
 ﻿<?php  
-    require_once('../connect.php');  
-    $sql = "select * from article order by dateline desc";  
+    require_once('../front/connect.php');  
+    $sql = "select * from blog order by dateline desc";  
     $query = mysql_query($sql);  
     if($query && mysql_num_rows($query)) {  
         while($row = mysql_fetch_assoc($query)) {  
@@ -18,8 +18,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta name="description" content="文章发布系统——后台管理系统">  
     <meta name="author" content="DreamBoy">  
-    <link rel="stylesheet" href="../css/bootstrap.min.css">  
-    <link rel="stylesheet" href="../myCss/style.css">  
+    <link rel="stylesheet" href="../../tpl/bootstrap/css/bootstrap.css">  
+    <link rel="stylesheet" href="../css/blogStyle.css">  
 </head>  
 <body>  
     <div class="container">  

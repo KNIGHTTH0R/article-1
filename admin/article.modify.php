@@ -1,8 +1,8 @@
 ﻿<?php  
-    require_once('../connect.php');  
+    require_once('../front/connect.php');  
     //读取旧信息  
     $id = intval($_GET['id']);  
-    $query = mysql_query("select * from article where id=$id");  
+    $query = mysql_query("select * from blog where id=$id");  
     $data = mysql_fetch_assoc($query);  
 ?>  
 <!DOCTYPE html>  
@@ -13,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta name="description" content="文章发布系统——后台管理系统">  
     <meta name="author" content="DreamBoy">  
-    <link rel="stylesheet" href="../css/bootstrap.min.css">  
-    <link rel="stylesheet" href="../myCss/style.css">  
+    <link rel="stylesheet" href="../../tpl/bootstrap/css/bootstrap.css">  
+    <link rel="stylesheet" href="../css/blogStyle.css">  
 </head>  
 <body>  
     <div class="container">  
