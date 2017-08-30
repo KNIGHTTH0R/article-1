@@ -40,6 +40,7 @@ $page=$_GET["p"]; // use for page 201670829-jwc
                                 <div class="list-group">  
                                     <a href="article.add.php" class="list-group-item">发布文章</a>  
                                     <a href="article.manage.php" class="list-group-item active">管理文章</a>  
+                                    <a href="#" class="list-group-item">话单查询</a>
                                 </div>  
                         </div>  
                     </div>  
