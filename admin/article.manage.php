@@ -1,5 +1,7 @@
 ﻿<?php  
-    require_once('../front/connect.php');  
+require_once('../front/connect.php'); 
+$page=$_GET["p"]; // use for page 201670829-jwc
+   // $sql="select * from blog limit".($page-1)*5.",5";
     $sql = "select * from blog order by dateline desc";  
     $query = mysql_query($sql);  
     if($query && mysql_num_rows($query)) {  
@@ -75,7 +77,25 @@
                                     </tbody>  
                                 </table>  
                             </div>  
-                        </div>  
+                        </div> 
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav> 
                     </div>  
                 </div>  
             </div>  
